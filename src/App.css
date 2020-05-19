@@ -1,6 +1,7 @@
 .square {
-  	background: white;
-	border: 1px solid gray;
+  	background: rgb(102, 169, 223);
+	border: 1.5px solid white;
+	color: aliceblue;
 	float: left;
 	margin-right: -1px;
 	margin-top: -1px;
@@ -11,6 +12,12 @@
 	font-size: 40px;
 	font-weight: bold;
 	line-height: 80px;
+	transition: transform .5s;
+}
+
+.square:hover {
+	background: rgb(45, 110, 163);
+	transform: scale(1.05);
 }
 
 .square:focus {
@@ -33,4 +40,8 @@
 	display: flex;
 	flex-direction: row;
 	margin: 0 auto;
+}
+
+.game-info {
+	padding-left: 10px;
 }
